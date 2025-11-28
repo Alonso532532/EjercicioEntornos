@@ -28,6 +28,15 @@ public class App {
                 Titles.writeTitle(titulo);
             } else if (numero == 0) {
                 Console.close();
+            } else if (numero == 3) {
+                System.out.printf("Lado del cuadrado: ");
+                int lado = teclado.nextInt();
+                teclado.nextLine();
+                System.out.print("Con que carácter: ");
+                char car = teclado.nextLine().charAt(0);
+                Figures.writeSquare(lado, car);
+            } else if (numero == 4) {
+
             }
         }
     }
