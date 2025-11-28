@@ -3,5 +3,6 @@ public class Console {
 
         System.out.println("Cerrado");
         System.exit(0);
+
     }
 }
