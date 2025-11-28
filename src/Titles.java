@@ -2,18 +2,20 @@ public class Titles {
 
     public static void writeTitle(String c) {
 
-        System.out.println("");
+        for (int i = 0; i < c.length() + 8; i++) System.out.print("*");
+        System.out.println();
+        System.out.println("*** " + c + " ***");
+        for (int i = 0; i < c.length() + 8; i++) System.out.print("*");
+        System.out.println();
 
-        for(int i=0;i<80;i++){
-            System.out.printf("*");
-        }
-        System.out.println("");
+    }
 
-        System.out.println(c);
+    static void writeHeader(){
+        writeHeader(80);
+    }
 
-        for(int i=0;i<80;i++){
-            System.out.printf("*");
-        }
-        System.out.println(""); 
+    static void writeHeader(int cant){
+        for (int i = 0; i < cant; i++) System.out.print("<");
+        System.out.println();
     }
 }

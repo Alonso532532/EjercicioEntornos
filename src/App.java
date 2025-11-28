@@ -8,13 +8,15 @@ public class App {
         System.out.println(String.format("Práctica 1 Alonso"));
 
         Scanner teclado = new Scanner(System.in);
-        
-        for (; true; ) { 
+
+        for (; true; ) {
             System.out.println("Choose an option:\n" +
                     "  1. Square\n" +
                     "  2. Title\n" +
                     "  3. Write square personalizado\n" +
                     "  4. Write reversed triangle\n" +
+                    "  5. Write header\n" +
+                    "  6. Write header cunstom\n" +
                     "  0. Quit\n");
 
             int numero = teclado.nextInt();
@@ -39,6 +41,13 @@ public class App {
                 Figures.writeSquare(lado, car);
             } else if (numero == 4) {
                 Figures.writeInvertedPyramid();
+            }else if (numero == 5) {
+                Titles.writeHeader();
+            }else if (numero == 6) {
+                System.out.print("¿Cuantas vezes?: ");
+                int cant = teclado.nextInt();
+                teclado.nextLine();
+                Titles.writeHeader(cant);
             }
         }
     }
