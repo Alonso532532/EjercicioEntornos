@@ -9,4 +9,13 @@ public class Titles {
         System.out.println();
 
     }
+
+    static void writeHeader(){
+        writeHeader(80);
+    }
+
+    static void writeHeader(int cant){
+        for (int i = 0; i < cant; i++) System.out.print("<");
+        System.out.println();
+    }
 }
