@@ -14,6 +14,7 @@ public class App {
                     "  1. Square\n" +
                     "  2. Title\n" +
                     "  3. Write header\n" +
+                    "  4. Write header cunstom\n" +
                     "  0. Quit\n");
 
             int numero = teclado.nextInt();
@@ -31,6 +32,11 @@ public class App {
                 Console.close();
             }else if (numero == 3) {
                 Titles.writeHeader();
+            }else if (numero == 4) {
+                System.out.print("¿Cuantas vezes?: ");
+                int cant = teclado.nextInt();
+                teclado.nextLine();
+                Titles.writeHeader(cant);
             }
         }
     }
