@@ -10,7 +10,7 @@ public class Figures {
                 System.out.printf("*");
             }
 
-            System.out.println(""); 
+            System.out.println("");
         }
     }
 }

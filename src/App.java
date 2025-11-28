@@ -8,7 +8,7 @@ public class App {
         System.out.println(String.format("Práctica 1 Alonso"));
 
         Scanner teclado = new Scanner(System.in);
-
+        
         for (; true; ) {
             System.out.println("Choose an option:\n" +
                     "  1. Square\n" +
