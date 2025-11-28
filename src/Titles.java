@@ -14,6 +14,6 @@ public class Titles {
         for(int i=0;i<80;i++){
             System.out.printf("*");
         }
-        System.out.println("");
+        System.out.println(""); 
     }
 }
