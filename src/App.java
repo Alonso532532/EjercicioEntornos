@@ -13,6 +13,8 @@ public class App {
             System.out.println("Choose an option:\n" +
                     "  1. Square\n" +
                     "  2. Title\n" +
+                    "  3. Write square personalizado\n" +
+                    "  4. Write reversed triangle\n" +
                     "  0. Quit\n");
 
             int numero = teclado.nextInt();
@@ -36,7 +38,7 @@ public class App {
                 char car = teclado.nextLine().charAt(0);
                 Figures.writeSquare(lado, car);
             } else if (numero == 4) {
-
+                Figures.writeInvertedPyramid();
             }
         }
     }

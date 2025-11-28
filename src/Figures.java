@@ -16,4 +16,7 @@ public class Figures {
             System.out.println();
         }
     }
+    public static void writeInvertedPyramid() {
+        System.out.println("Aqui se muestra un triangulo invertido");
+    }
 }
