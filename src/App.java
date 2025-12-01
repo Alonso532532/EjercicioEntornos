@@ -8,8 +8,8 @@ public class App {
         System.out.println(String.format("Práctica 1 Alonso"));
 
         Scanner teclado = new Scanner(System.in);
-
-        for (; true; ) {
+        
+        for (; true; ) { 
             System.out.println("Choose an option:\n" +
                     "  1. Square\n" +
                     "  2. Title\n" +
@@ -17,6 +17,7 @@ public class App {
                     "  4. Write reversed triangle\n" +
                     "  5. Write header\n" +
                     "  6. Write header cunstom\n" +
+                    "  7. Write rectangle\n" +
                     "  0. Quit\n");
 
             int numero = teclado.nextInt();
@@ -48,6 +49,8 @@ public class App {
                 int cant = teclado.nextInt();
                 teclado.nextLine();
                 Titles.writeHeader(cant);
+            } else if (numero == 7) {
+                Figures.writeRectangle();
             }
         }
     }
