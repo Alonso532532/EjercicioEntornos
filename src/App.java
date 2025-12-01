@@ -15,6 +15,7 @@ public class App {
                     "  2. Title\n" +
                     "  3. Write square personalizado\n" +
                     "  4. Write reversed triangle\n" +
+                    "  5. Write rectangle\n" +
                     "  0. Quit\n");
 
             int numero = teclado.nextInt();
@@ -39,6 +40,8 @@ public class App {
                 Figures.writeSquare(lado, car);
             } else if (numero == 4) {
                 Figures.writeInvertedPyramid();
+            } else if (numero == 5) {
+                Figures.writeRectangle();
             }
         }
     }

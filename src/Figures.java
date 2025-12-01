@@ -19,4 +19,8 @@ public class Figures {
     public static void writeInvertedPyramid() {
         System.out.println("Aqui se muestra un triangulo invertido");
     }
+    public static void writeRectangle(){
+        System.out.println("Aqui se muestra un rectangulo de dimensiones personalizadas");
+    }
+
 }
