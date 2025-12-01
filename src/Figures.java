@@ -22,5 +22,7 @@ public class Figures {
     public static void writeRectangle(){
         System.out.println("Aqui se muestra un rectangulo de dimensiones personalizadas");
     }
-
+    public static void writeRectangle(int a){
+        System.out.println("Aqui se muestra un rectangulo de dimensiones personalizadas y usando un carácter determinado");
+    }
 }
